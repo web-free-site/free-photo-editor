@@ -13,7 +13,7 @@
   "scripts": {
     "server": "webpack serve --mode development --env development --open",
     "dev": "webpack --mode development",
-    "build": "webpack --mode production && node scripts/assemble-dist.mjs && node scripts/prerender-pages.mjs && node scripts/generate-sitemap.mjs && node scripts/inject-more-tools.mjs",
+    "build": "webpack --mode production && node scripts/assemble-dist.mjs && node scripts/prerender-pages.mjs && node scripts/generate-sitemap.mjs && node scripts/inject-more-tools.mjs && node scripts/inject-hub-legal.mjs",
     "preview:cf": "npm run build && npx wrangler dev",
     "test": "npm run build && node scripts/verify-editor.mjs"
   },
