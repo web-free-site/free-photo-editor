@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="x-ua-compatible" content="IE=edge" />
+	<title>Free Photo Editor — Crop, Filter &amp; Edit Online (No Sign-Up)</title>
+	<meta name="description" content="Free Photo Editor runs in your browser: open a local image, crop, rotate, apply filters, draw text, and download PNG or JPG. No account, no watermark, no upload." />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0" />
+	<link rel="canonical" href="https://free-photo-editor.web-free.site/" />
+	<link rel="icon" sizes="192x192" href="images/favicon.png">
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Free Photo Editor" />
+	<meta property="og:description" content="Browser photo editor — crop, filters, layers, export. Private, free, no sign-up." />
+	<meta property="og:url" content="https://free-photo-editor.web-free.site/" />
+	<meta property="og:image" content="https://free-photo-editor.web-free.site/images/preview.jpg" />
+	<meta property="og:site_name" content="Free Photo Editor" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Free Photo Editor" />
+	<meta name="twitter:description" content="Edit photos in your browser without uploading them to a server." />
+	<meta name="twitter:image" content="https://free-photo-editor.web-free.site/images/preview.jpg" />
+	<link rel="stylesheet" href="/wf-site.css" />
+	<script src="https://ref.web-free.site/r.js" defer></script>
+	<script src="dist/bundle.js"></script>
+</head>
+<body class="wf-has-editor-footer">
+	<section class="sr_only" id="seo-prerender">
+		<h1>Free Photo Editor — online, no sign-up</h1>
+		<p>Open an image from your device, crop or rotate it, add filters and text, then download the result. All editing stays in your browser.</p>
+	</section>
+	<div id="wf-ad-top" aria-label="Advertisement"></div>
+	<div id="wf-ad-rail-left" aria-hidden="true"></div>
+	<div id="wf-ad-rail-right" aria-hidden="true"></div>
+	<div class="wrapper">
+
+		<nav aria-label="Main Menu" class="main_menu" id="main_menu"></nav>
+		
+		<div class="submenu">
+			<a class="logo" href="/">Free Photo Editor</a>
+			<div class="block attributes" id="action_attributes"></div>
+			<button class="undo_button" id="undo_button" type="button">
+				<span class="sr_only">Undo</span>
+			</button>
+		</div>
+		
+		<div class="sidebar_left" id="tools_container"></div>
+
+
+		<div class="middle_area" id="middle_area">
+
+			<canvas class="ruler_left" id="ruler_left"></canvas>
+			<canvas class="ruler_top" id="ruler_top"></canvas>
+
+			<div class="main_wrapper" id="main_wrapper">
+				<div class="canvas_wrapper" id="canvas_wrapper">
+					<div id="mouse"></div>
+					<div class="transparent-grid" id="canvas_minipaint_background"></div>
+					<canvas id="canvas_minipaint">
+						<div class="trn error">
+							Your browser does not support canvas or JavaScript is not enabled.
+						</div>
+					</canvas>
+				</div>
+			</div>
+		</div>
+
+		<div class="sidebar_right">
+			<div class="preview block">
+				<h2 class="trn toggle" data-target="toggle_preview">Preview</h2>
+				<div id="toggle_preview"></div>
+			</div>
+			
+			<div class="colors block">
+				<h2 class="trn toggle" data-target="toggle_colors">Colors</h2>
+				<div class="content" id="toggle_colors"></div>
+			</div>
+			
+			<div class="block" id="info_base">
+				<h2 class="trn toggle toggle-full" data-target="toggle_info">Information</h2>
+				<div class="content" id="toggle_info"></div>
+			</div>
+			
+			<div class="details block" id="details_base">
+				<h2 class="trn toggle toggle-full" data-target="toggle_details">Layer details</h2>
+				<div class="content details-content" id="toggle_details"></div>
+			</div>
+			
+			<div class="layers block">
+				<h2 class="trn">Layers</h2>
+				<div class="content" id="layers_base"></div>
+			</div>
+		</div>
+	</div>
+	<div class="mobile_menu">
+		<button class="left_mobile_menu" id="left_mobile_menu_button" type="button">
+			<span class="sr_only">Toggle Menu</span>
+		</button>
+		<button class="right_mobile_menu" id="mobile_menu_button" type="button">
+			<span class="sr_only">Toggle Menu</span>
+		</button>
+	</div>
+	<div class="hidden" id="tmp"></div>
+	<div id="popups"></div>
+	<div id="wf-ad-mobile"></div>
+	<div id="wf-ad-native" class="hidden" aria-hidden="true"></div>
+	<footer id="wf-site-footer">
+		<span>Powered by <a href="https://github.com/viliusle/miniPaint" rel="noopener noreferrer">miniPaint</a> (MIT) — credit ViliusL</span>
+		<a href="/about/">About</a>
+		<a href="/privacy/">Privacy</a>
+		<a href="/terms/">Terms</a>
+		<a href="https://web-free.site/?ref=photo-editor">More free tools</a>
+	</footer>
+	<script src="/wf-editor-ads.js" defer></script>
+</body>
+</html>
