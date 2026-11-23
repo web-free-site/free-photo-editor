@@ -75,14 +75,14 @@ Code formats (KEY = the 32-char placeholder, later a 32-hex hash):
 - Banner WxH: <script>atOptions = {'key':'KEY','format':'iframe','height':H,'width':W,'params':{}};</script><script src="https://bauval.org/22/KEY"></script>
 - Smartlink URL: https://araplhn.org/4/KEY
 
-## free-photo-editor.web-free.site — site ID SITE_ID_PENDING
-Popunder wf23bplaceholderpopunder00000000
-Native Banner wf23bplaceholdernativebanner0000
-Smartlink wf23bplaceholdersmartlink0000000
-Social Bar wf23bplaceholdersocialbar0000000
-468x60 wf23bplaceholderbanner468x600000
-160x300 wf23bplaceholderbanner160x300000
-320x50 wf23bplaceholderbanner320x500000
-300x250 wf23bplaceholderbanner300x250000
-160x600 wf23bplaceholderbanner160x600000
-728x90 wf23bplaceholderbanner728x900000
+## free-photo-editor.web-free.site — site ID 6222783
+Popunder 63a55326b3aba451afa990c9e98a5a5c
+Native Banner 1d662b2d4d7667b529ebf220d4937091
+Smartlink 526e2a5b848cb97cdbc826bcb72432b4
+Social Bar 3cb4daad3299a3acb007060d0827eff5
+468x60 f308f5c8bcf60456d31aaaea35726921
+160x300 15c75b09014a96d2a02cde7ad35689a1
+320x50 3f8ba2ba6ca92ec9c5775a4b4c998d5f
+300x250 4695ab273af8e5f1e896567a41888aeb
+160x600 c15ab05270ed2ac4b37ba6479fe494b8
+728x90 0ed51aa3dc36cfd34bcc106d93ccf41d
